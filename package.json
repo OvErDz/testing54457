@@ -34,7 +34,7 @@
     "node-opus": "^0.2.7",
     "opusscript": "0.0.6",
     "pretty-ms": "^3.1.0",
-    "python": "0.0.4",
+    "canvas": "1.6.11",
     "queue": "^4.4.2",
     "quick.db": "6.3.1",
     "request": "^2.85.0",
