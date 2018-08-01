@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 var Canvas = require('canvas');// npm i canvas
 var jimp = require('jimp');// npm i jimp 
 const fs = require("fs");
-client.user.setGame('name of your server','https://www.twitch.tv/OvErDz1');
+
   
 
 
