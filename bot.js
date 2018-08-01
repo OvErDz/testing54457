@@ -59,7 +59,7 @@ const fs = require("fs");
                               ctx.fontSize = '28px';
                               ctx.fillStyle = "#FFFFFF";
                               ctx.textAlign = "center";
-                                    ctx.fillText(`انت العضو رقم${member.guild.memberCount} `
+                                    ctx.fillText(`You are the ${member.guild.memberCount} member `
                               , 200, 190);
 
  welcomer.sendFile(canvas.toBuffer())
