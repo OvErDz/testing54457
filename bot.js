@@ -10,9 +10,7 @@ client.on('ready', () => {
   console.log('---------------')
 });
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-}); 
+
 
       bot.on('guildMemberAdd', member => {
       const welcomer =  member.guild.channels.find('name', 'welcome');
