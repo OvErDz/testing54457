@@ -74,12 +74,23 @@ const fs = require("fs");
       });
 
 
-c
+
+client.on("ready", () => {
+    var guild;
+    while (!guild)
+        guild = client.guilds.get("470535765625929728");
+    guild.fetchInvites().then((data) => {
+        data.forEach((Invite, key, map) => {
+            var Inv = Invite.code;
+            dat[Inv] = Invite.uses;
+        });
+    });
+});
  
  
  
 client.on("guildMemberAdd", (member) => {
-    let channel = member.guild.channels.get('name', 'welcome');
+    let channel = member.guild.channels.get("474201933440090113");
     if (!channel) {
         console.log("!the channel id it's not correct");
         return;
@@ -102,7 +113,9 @@ client.on("guildMemberAdd", (member) => {
        
        });
     });
-});
+}); 
+ 
+
 
 
 bot.login(process.env.BOT_TOKEN);
